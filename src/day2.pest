@@ -1,0 +1,9 @@
+num = {ASCII_DIGIT+}
+red_cube = {num ~ " red"}
+blue_cube = {num ~ " blue"}
+green_cube = {num ~ " green"}
+cube = {red_cube | blue_cube | green_cube }
+subset = {cube ~ (", " ~ cube)*}
+game_num = {"Game " ~ num ~ ": "}
+game = {game_num ~ subset ~ ("; " ~ subset)*}
+file = {SOI ~ (game ~ NEWLINE)* ~ EOI}
