@@ -31,7 +31,7 @@ impl Game {
 }
 
 #[derive(Parser)]
-#[grammar = "day2.pest"]
+#[grammar = "parsers/day2.pest"]
 struct GameParser;
 
 fn parse_game(input: &str) -> Result<Game> {
