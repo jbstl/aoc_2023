@@ -1,0 +1,7 @@
+whitespace = _{ " "+ }
+num = {ASCII_DIGIT+}
+winning_nums = {(whitespace ~ num)+}
+my_nums = {(whitespace ~ num)+}
+label = _{"Card" ~ whitespace ~ num ~ ":"}
+card = {label ~ winning_nums ~ whitespace ~ "|" ~ my_nums}
+cards = {card ~ (NEWLINE ~ card)*}
