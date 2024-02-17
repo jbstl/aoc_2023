@@ -1,5 +1,0 @@
-num = {ASCII_DIGIT+}
-symbol = {"+" | "!" | "@" | "#" | "$" | "%" | "^" | "&" | "*" | "-" | "/" }
-null_character = _{"."}
-line = {(num | symbol | null_character)+}
-schematic = { line ~ (NEWLINE ~ line)*}
