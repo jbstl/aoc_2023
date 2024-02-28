@@ -25,6 +25,7 @@ anyhow = { version = "1.0.79", features = ["backtrace"] }
 # Template dependencies
 chrono = { version = "0.4.31", optional = true }
 dhat = { version = "0.3.2", optional = true }
+itertools = "0.12.1"
 pest = "2.7.7"
 pest_derive = "2.7.7"
 pico-args = "0.5.0"
